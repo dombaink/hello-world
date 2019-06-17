@@ -1,14 +1,14 @@
 pipeline {
   agent {
     docker {
-      image 'hello-world'
+      image 'centos'
     }
 
   }
   stages {
     stage('build') {
       steps {
-        sh 'docker ps'
+        sh 'docker ps -a'
       }
     }
   }
