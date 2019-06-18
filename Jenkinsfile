@@ -2,6 +2,7 @@ pipeline {
   agent {
     docker {
       image 'centos'
+      args 'docke ps -a'
     }
 
   }
